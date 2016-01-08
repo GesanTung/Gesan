@@ -8,6 +8,8 @@
 
 import UIKit
 
-public let KURLRoot        = ""
+public let KURLRoot             = "http://cbgcv2.scol.com.cn"
+
+public let KURLAppColumn        =  KURLRoot + "/appIndex.json"
 
 

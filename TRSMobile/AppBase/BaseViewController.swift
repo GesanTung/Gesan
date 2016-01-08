@@ -8,11 +8,25 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController,BaseViewControllerProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        initContentData()
+        
+        initContentView()
+    }
+    
+    func initContentView() {
+        
+    }
+    
+    func initContentData() {
+        
+    }
+    
+    func updateView(data: AnyObject) {
+        
     }
     
     override func didReceiveMemoryWarning() {
