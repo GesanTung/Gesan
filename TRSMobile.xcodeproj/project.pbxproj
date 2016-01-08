@@ -32,6 +32,27 @@
 		A6859F711C3FBBCF00ECB5E0 /* ZLSwiftHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F6A1C3FBBCF00ECB5E0 /* ZLSwiftHeadView.swift */; };
 		A6859F721C3FBBCF00ECB5E0 /* ZLSwiftRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6859F6B1C3FBBCF00ECB5E0 /* ZLSwiftRefresh.bundle */; };
 		A6859F731C3FBBCF00ECB5E0 /* ZLSwiftRefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F6D1C3FBBCF00ECB5E0 /* ZLSwiftRefreshExtension.swift */; };
+		A6859F7E1C3FBF4800ECB5E0 /* LBXPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F761C3FBF4800ECB5E0 /* LBXPermissions.swift */; };
+		A6859F7F1C3FBF4800ECB5E0 /* LBXScanLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F771C3FBF4800ECB5E0 /* LBXScanLineAnimation.swift */; };
+		A6859F801C3FBF4800ECB5E0 /* LBXScanNetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F781C3FBF4800ECB5E0 /* LBXScanNetAnimation.swift */; };
+		A6859F811C3FBF4800ECB5E0 /* LBXScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F791C3FBF4800ECB5E0 /* LBXScanView.swift */; };
+		A6859F821C3FBF4800ECB5E0 /* LBXScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F7A1C3FBF4800ECB5E0 /* LBXScanViewController.swift */; };
+		A6859F831C3FBF4800ECB5E0 /* LBXScanViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F7B1C3FBF4800ECB5E0 /* LBXScanViewStyle.swift */; };
+		A6859F841C3FBF4800ECB5E0 /* LBXScanWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F7C1C3FBF4800ECB5E0 /* LBXScanWrapper.swift */; };
+		A6859F851C3FBF4800ECB5E0 /* QQScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F7D1C3FBF4800ECB5E0 /* QQScanViewController.swift */; };
+		A6859F871C3FBFAE00ECB5E0 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6859F861C3FBFAE00ECB5E0 /* CodeScan.bundle */; };
+		A6859F8A1C3FBFE000ECB5E0 /* SwiftEventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F891C3FBFE000ECB5E0 /* SwiftEventBus.swift */; };
+		A6859F981C3FBFFD00ECB5E0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F8C1C3FBFFD00ECB5E0 /* Event.swift */; };
+		A6859F991C3FBFFD00ECB5E0 /* EventReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F8D1C3FBFFD00ECB5E0 /* EventReference.swift */; };
+		A6859F9A1C3FBFFD00ECB5E0 /* EventSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F8E1C3FBFFD00ECB5E0 /* EventSubscription.swift */; };
+		A6859F9B1C3FBFFD00ECB5E0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6859F8F1C3FBFFD00ECB5E0 /* Info.plist */; };
+		A6859F9C1C3FBFFD00ECB5E0 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F911C3FBFFD00ECB5E0 /* Observable.swift */; };
+		A6859F9D1C3FBFFD00ECB5E0 /* ObservableChainingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F921C3FBFFD00ECB5E0 /* ObservableChainingProxy.swift */; };
+		A6859F9E1C3FBFFD00ECB5E0 /* ObservableProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F931C3FBFFD00ECB5E0 /* ObservableProxy.swift */; };
+		A6859F9F1C3FBFFD00ECB5E0 /* ObservableReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F941C3FBFFD00ECB5E0 /* ObservableReference.swift */; };
+		A6859FA01C3FBFFD00ECB5E0 /* OwningEventReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F951C3FBFFD00ECB5E0 /* OwningEventReference.swift */; };
+		A6859FA11C3FBFFD00ECB5E0 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F961C3FBFFD00ECB5E0 /* Protocols.swift */; };
+		A6859FA21C3FBFFD00ECB5E0 /* TupleObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F971C3FBFFD00ECB5E0 /* TupleObservable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +137,28 @@
 		A6859F6A1C3FBBCF00ECB5E0 /* ZLSwiftHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwiftHeadView.swift; sourceTree = "<group>"; };
 		A6859F6B1C3FBBCF00ECB5E0 /* ZLSwiftRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZLSwiftRefresh.bundle; sourceTree = "<group>"; };
 		A6859F6D1C3FBBCF00ECB5E0 /* ZLSwiftRefreshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwiftRefreshExtension.swift; sourceTree = "<group>"; };
+		A6859F761C3FBF4800ECB5E0 /* LBXPermissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXPermissions.swift; sourceTree = "<group>"; };
+		A6859F771C3FBF4800ECB5E0 /* LBXScanLineAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanLineAnimation.swift; sourceTree = "<group>"; };
+		A6859F781C3FBF4800ECB5E0 /* LBXScanNetAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanNetAnimation.swift; sourceTree = "<group>"; };
+		A6859F791C3FBF4800ECB5E0 /* LBXScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanView.swift; sourceTree = "<group>"; };
+		A6859F7A1C3FBF4800ECB5E0 /* LBXScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanViewController.swift; sourceTree = "<group>"; };
+		A6859F7B1C3FBF4800ECB5E0 /* LBXScanViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanViewStyle.swift; sourceTree = "<group>"; };
+		A6859F7C1C3FBF4800ECB5E0 /* LBXScanWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanWrapper.swift; sourceTree = "<group>"; };
+		A6859F7D1C3FBF4800ECB5E0 /* QQScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQScanViewController.swift; sourceTree = "<group>"; };
+		A6859F861C3FBFAE00ECB5E0 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
+		A6859F891C3FBFE000ECB5E0 /* SwiftEventBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftEventBus.swift; sourceTree = "<group>"; };
+		A6859F8C1C3FBFFD00ECB5E0 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		A6859F8D1C3FBFFD00ECB5E0 /* EventReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventReference.swift; sourceTree = "<group>"; };
+		A6859F8E1C3FBFFD00ECB5E0 /* EventSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventSubscription.swift; sourceTree = "<group>"; };
+		A6859F8F1C3FBFFD00ECB5E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6859F901C3FBFFD00ECB5E0 /* Observable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observable.h; sourceTree = "<group>"; };
+		A6859F911C3FBFFD00ECB5E0 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		A6859F921C3FBFFD00ECB5E0 /* ObservableChainingProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableChainingProxy.swift; sourceTree = "<group>"; };
+		A6859F931C3FBFFD00ECB5E0 /* ObservableProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableProxy.swift; sourceTree = "<group>"; };
+		A6859F941C3FBFFD00ECB5E0 /* ObservableReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableReference.swift; sourceTree = "<group>"; };
+		A6859F951C3FBFFD00ECB5E0 /* OwningEventReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwningEventReference.swift; sourceTree = "<group>"; };
+		A6859F961C3FBFFD00ECB5E0 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		A6859F971C3FBFFD00ECB5E0 /* TupleObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TupleObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +245,9 @@
 		A6859EE91C3F574F00ECB5E0 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				A6859F8B1C3FBFFD00ECB5E0 /* Observable */,
+				A6859F881C3FBFE000ECB5E0 /* SwiftEventBus */,
+				A6859F751C3FBF4800ECB5E0 /* QRScan */,
 				A6859F661C3FBBCF00ECB5E0 /* ZLSwiftRefresh */,
 				A6859EEB1C3F581E00ECB5E0 /* Alamofire */,
 			);
@@ -240,6 +286,49 @@
 				A6859F6D1C3FBBCF00ECB5E0 /* ZLSwiftRefreshExtension.swift */,
 			);
 			path = ZLSwiftRefresh;
+			sourceTree = "<group>";
+		};
+		A6859F751C3FBF4800ECB5E0 /* QRScan */ = {
+			isa = PBXGroup;
+			children = (
+				A6859F861C3FBFAE00ECB5E0 /* CodeScan.bundle */,
+				A6859F761C3FBF4800ECB5E0 /* LBXPermissions.swift */,
+				A6859F771C3FBF4800ECB5E0 /* LBXScanLineAnimation.swift */,
+				A6859F781C3FBF4800ECB5E0 /* LBXScanNetAnimation.swift */,
+				A6859F791C3FBF4800ECB5E0 /* LBXScanView.swift */,
+				A6859F7A1C3FBF4800ECB5E0 /* LBXScanViewController.swift */,
+				A6859F7B1C3FBF4800ECB5E0 /* LBXScanViewStyle.swift */,
+				A6859F7C1C3FBF4800ECB5E0 /* LBXScanWrapper.swift */,
+				A6859F7D1C3FBF4800ECB5E0 /* QQScanViewController.swift */,
+			);
+			path = QRScan;
+			sourceTree = "<group>";
+		};
+		A6859F881C3FBFE000ECB5E0 /* SwiftEventBus */ = {
+			isa = PBXGroup;
+			children = (
+				A6859F891C3FBFE000ECB5E0 /* SwiftEventBus.swift */,
+			);
+			path = SwiftEventBus;
+			sourceTree = "<group>";
+		};
+		A6859F8B1C3FBFFD00ECB5E0 /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				A6859F8C1C3FBFFD00ECB5E0 /* Event.swift */,
+				A6859F8D1C3FBFFD00ECB5E0 /* EventReference.swift */,
+				A6859F8E1C3FBFFD00ECB5E0 /* EventSubscription.swift */,
+				A6859F8F1C3FBFFD00ECB5E0 /* Info.plist */,
+				A6859F901C3FBFFD00ECB5E0 /* Observable.h */,
+				A6859F911C3FBFFD00ECB5E0 /* Observable.swift */,
+				A6859F921C3FBFFD00ECB5E0 /* ObservableChainingProxy.swift */,
+				A6859F931C3FBFFD00ECB5E0 /* ObservableProxy.swift */,
+				A6859F941C3FBFFD00ECB5E0 /* ObservableReference.swift */,
+				A6859F951C3FBFFD00ECB5E0 /* OwningEventReference.swift */,
+				A6859F961C3FBFFD00ECB5E0 /* Protocols.swift */,
+				A6859F971C3FBFFD00ECB5E0 /* TupleObservable.swift */,
+			);
+			path = Observable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,7 +447,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6859F871C3FBFAE00ECB5E0 /* CodeScan.bundle in Resources */,
 				A6859EDF1C3F535C00ECB5E0 /* LaunchScreen.storyboard in Resources */,
+				A6859F9B1C3FBFFD00ECB5E0 /* Info.plist in Resources */,
 				A6859F721C3FBBCF00ECB5E0 /* ZLSwiftRefresh.bundle in Resources */,
 				A6859EDC1C3F535C00ECB5E0 /* Assets.xcassets in Resources */,
 				A6859F301C3F92ED00ECB5E0 /* UIDetailViewController.xib in Resources */,
@@ -372,27 +463,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6859F991C3FBFFD00ECB5E0 /* EventReference.swift in Sources */,
 				A6859F6F1C3FBBCF00ECB5E0 /* ZLSwiftConstDefine.swift in Sources */,
 				A6859F251C3F8E7300ECB5E0 /* TRSConfig.swift in Sources */,
 				A6859F231C3F89F100ECB5E0 /* TRSApi.swift in Sources */,
 				A6859F1F1C3F86E400ECB5E0 /* MainTabBarController.swift in Sources */,
 				A6859F361C3F94DD00ECB5E0 /* BaseView.swift in Sources */,
 				A6859F401C3F997D00ECB5E0 /* BaseControllerProtocol.swift in Sources */,
+				A6859F811C3FBF4800ECB5E0 /* LBXScanView.swift in Sources */,
 				A6859F3E1C3F95A100ECB5E0 /* BaseTableViewController.swift in Sources */,
+				A6859FA11C3FBFFD00ECB5E0 /* Protocols.swift in Sources */,
+				A6859F7F1C3FBF4800ECB5E0 /* LBXScanLineAnimation.swift in Sources */,
+				A6859F7E1C3FBF4800ECB5E0 /* LBXPermissions.swift in Sources */,
 				A6859F381C3F951800ECB5E0 /* BaseButton.swift in Sources */,
+				A6859F9C1C3FBFFD00ECB5E0 /* Observable.swift in Sources */,
 				A6859F321C3F931700ECB5E0 /* UIImageViewController.swift in Sources */,
 				A6859F291C3F8F5200ECB5E0 /* BaseViewController.swift in Sources */,
+				A6859F981C3FBFFD00ECB5E0 /* Event.swift in Sources */,
 				A6859ED71C3F535C00ECB5E0 /* ViewController.swift in Sources */,
+				A6859F9A1C3FBFFD00ECB5E0 /* EventSubscription.swift in Sources */,
+				A6859F831C3FBF4800ECB5E0 /* LBXScanViewStyle.swift in Sources */,
 				A6859F341C3F94B400ECB5E0 /* BaseNetServer.swift in Sources */,
 				A6859F2B1C3F900F00ECB5E0 /* UIHomeViewController.swift in Sources */,
 				A6859F211C3F878900ECB5E0 /* TRSDefine.swift in Sources */,
+				A6859FA01C3FBFFD00ECB5E0 /* OwningEventReference.swift in Sources */,
+				A6859F851C3FBF4800ECB5E0 /* QQScanViewController.swift in Sources */,
 				A6859ED51C3F535C00ECB5E0 /* AppDelegate.swift in Sources */,
+				A6859F9D1C3FBFFD00ECB5E0 /* ObservableChainingProxy.swift in Sources */,
 				A6859F701C3FBBCF00ECB5E0 /* ZLSwiftFootView.swift in Sources */,
 				A6859F711C3FBBCF00ECB5E0 /* ZLSwiftHeadView.swift in Sources */,
+				A6859F821C3FBF4800ECB5E0 /* LBXScanViewController.swift in Sources */,
 				A6859F731C3FBBCF00ECB5E0 /* ZLSwiftRefreshExtension.swift in Sources */,
+				A6859FA21C3FBFFD00ECB5E0 /* TupleObservable.swift in Sources */,
+				A6859F841C3FBF4800ECB5E0 /* LBXScanWrapper.swift in Sources */,
+				A6859F8A1C3FBFE000ECB5E0 /* SwiftEventBus.swift in Sources */,
 				A6859F2F1C3F92ED00ECB5E0 /* UIDetailViewController.swift in Sources */,
 				A6859F3C1C3F957500ECB5E0 /* BaseTableViewCell.swift in Sources */,
+				A6859F801C3FBF4800ECB5E0 /* LBXScanNetAnimation.swift in Sources */,
 				A6859F3A1C3F953E00ECB5E0 /* BaseWebView.swift in Sources */,
+				A6859F9E1C3FBFFD00ECB5E0 /* ObservableProxy.swift in Sources */,
+				A6859F9F1C3FBFFD00ECB5E0 /* ObservableReference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
