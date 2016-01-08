@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A6859ED51C3F535C00ECB5E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859ED41C3F535C00ECB5E0 /* AppDelegate.swift */; };
 		A6859ED71C3F535C00ECB5E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859ED61C3F535C00ECB5E0 /* ViewController.swift */; };
-		A6859EDA1C3F535C00ECB5E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6859ED81C3F535C00ECB5E0 /* Main.storyboard */; };
 		A6859EDC1C3F535C00ECB5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6859EDB1C3F535C00ECB5E0 /* Assets.xcassets */; };
 		A6859EDF1C3F535C00ECB5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6859EDD1C3F535C00ECB5E0 /* LaunchScreen.storyboard */; };
 		A6859F1F1C3F86E400ECB5E0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F1E1C3F86E400ECB5E0 /* MainTabBarController.swift */; };
@@ -28,6 +27,11 @@
 		A6859F3C1C3F957500ECB5E0 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F3B1C3F957500ECB5E0 /* BaseTableViewCell.swift */; };
 		A6859F3E1C3F95A100ECB5E0 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F3D1C3F95A100ECB5E0 /* BaseTableViewController.swift */; };
 		A6859F401C3F997D00ECB5E0 /* BaseControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F3F1C3F997D00ECB5E0 /* BaseControllerProtocol.swift */; };
+		A6859F6F1C3FBBCF00ECB5E0 /* ZLSwiftConstDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F681C3FBBCF00ECB5E0 /* ZLSwiftConstDefine.swift */; };
+		A6859F701C3FBBCF00ECB5E0 /* ZLSwiftFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F691C3FBBCF00ECB5E0 /* ZLSwiftFootView.swift */; };
+		A6859F711C3FBBCF00ECB5E0 /* ZLSwiftHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F6A1C3FBBCF00ECB5E0 /* ZLSwiftHeadView.swift */; };
+		A6859F721C3FBBCF00ECB5E0 /* ZLSwiftRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A6859F6B1C3FBBCF00ECB5E0 /* ZLSwiftRefresh.bundle */; };
+		A6859F731C3FBBCF00ECB5E0 /* ZLSwiftRefreshExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859F6D1C3FBBCF00ECB5E0 /* ZLSwiftRefreshExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +90,6 @@
 		A6859ED11C3F535C00ECB5E0 /* TRSMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRSMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6859ED41C3F535C00ECB5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6859ED61C3F535C00ECB5E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A6859ED91C3F535C00ECB5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6859EDB1C3F535C00ECB5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6859EDE1C3F535C00ECB5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6859EE01C3F535C00ECB5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +111,11 @@
 		A6859F3D1C3F95A100ECB5E0 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		A6859F3F1C3F997D00ECB5E0 /* BaseControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseControllerProtocol.swift; sourceTree = "<group>"; };
 		A6859F461C3FA15500ECB5E0 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Alamofire.xcodeproj; sourceTree = "<group>"; };
+		A6859F681C3FBBCF00ECB5E0 /* ZLSwiftConstDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwiftConstDefine.swift; sourceTree = "<group>"; };
+		A6859F691C3FBBCF00ECB5E0 /* ZLSwiftFootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwiftFootView.swift; sourceTree = "<group>"; };
+		A6859F6A1C3FBBCF00ECB5E0 /* ZLSwiftHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwiftHeadView.swift; sourceTree = "<group>"; };
+		A6859F6B1C3FBBCF00ECB5E0 /* ZLSwiftRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZLSwiftRefresh.bundle; sourceTree = "<group>"; };
+		A6859F6D1C3FBBCF00ECB5E0 /* ZLSwiftRefreshExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwiftRefreshExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +154,6 @@
 				A6859EE91C3F574F00ECB5E0 /* Vendors */,
 				A6859ED41C3F535C00ECB5E0 /* AppDelegate.swift */,
 				A6859ED61C3F535C00ECB5E0 /* ViewController.swift */,
-				A6859ED81C3F535C00ECB5E0 /* Main.storyboard */,
 				A6859EDB1C3F535C00ECB5E0 /* Assets.xcassets */,
 				A6859EDD1C3F535C00ECB5E0 /* LaunchScreen.storyboard */,
 				A6859EE01C3F535C00ECB5E0 /* Info.plist */,
@@ -195,6 +202,7 @@
 		A6859EE91C3F574F00ECB5E0 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				A6859F661C3FBBCF00ECB5E0 /* ZLSwiftRefresh */,
 				A6859EEB1C3F581E00ECB5E0 /* Alamofire */,
 			);
 			path = Vendors;
@@ -220,6 +228,18 @@
 				A6859F5D1C3FA15500ECB5E0 /* Alamofire.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A6859F661C3FBBCF00ECB5E0 /* ZLSwiftRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				A6859F681C3FBBCF00ECB5E0 /* ZLSwiftConstDefine.swift */,
+				A6859F691C3FBBCF00ECB5E0 /* ZLSwiftFootView.swift */,
+				A6859F6A1C3FBBCF00ECB5E0 /* ZLSwiftHeadView.swift */,
+				A6859F6B1C3FBBCF00ECB5E0 /* ZLSwiftRefresh.bundle */,
+				A6859F6D1C3FBBCF00ECB5E0 /* ZLSwiftRefreshExtension.swift */,
+			);
+			path = ZLSwiftRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,8 +359,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6859EDF1C3F535C00ECB5E0 /* LaunchScreen.storyboard in Resources */,
+				A6859F721C3FBBCF00ECB5E0 /* ZLSwiftRefresh.bundle in Resources */,
 				A6859EDC1C3F535C00ECB5E0 /* Assets.xcassets in Resources */,
-				A6859EDA1C3F535C00ECB5E0 /* Main.storyboard in Resources */,
 				A6859F301C3F92ED00ECB5E0 /* UIDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6859F6F1C3FBBCF00ECB5E0 /* ZLSwiftConstDefine.swift in Sources */,
 				A6859F251C3F8E7300ECB5E0 /* TRSConfig.swift in Sources */,
 				A6859F231C3F89F100ECB5E0 /* TRSApi.swift in Sources */,
 				A6859F1F1C3F86E400ECB5E0 /* MainTabBarController.swift in Sources */,
@@ -366,6 +387,9 @@
 				A6859F2B1C3F900F00ECB5E0 /* UIHomeViewController.swift in Sources */,
 				A6859F211C3F878900ECB5E0 /* TRSDefine.swift in Sources */,
 				A6859ED51C3F535C00ECB5E0 /* AppDelegate.swift in Sources */,
+				A6859F701C3FBBCF00ECB5E0 /* ZLSwiftFootView.swift in Sources */,
+				A6859F711C3FBBCF00ECB5E0 /* ZLSwiftHeadView.swift in Sources */,
+				A6859F731C3FBBCF00ECB5E0 /* ZLSwiftRefreshExtension.swift in Sources */,
 				A6859F2F1C3F92ED00ECB5E0 /* UIDetailViewController.swift in Sources */,
 				A6859F3C1C3F957500ECB5E0 /* BaseTableViewCell.swift in Sources */,
 				A6859F3A1C3F953E00ECB5E0 /* BaseWebView.swift in Sources */,
@@ -375,14 +399,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A6859ED81C3F535C00ECB5E0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A6859ED91C3F535C00ECB5E0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A6859EDD1C3F535C00ECB5E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -12,12 +12,31 @@ class BaseTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+         weak var weakSelf = self as BaseTableViewController
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // 及时上拉刷新
+        tableView.nowRefresh({ () -> Void in
+            weakSelf?.delay(2.0, closure: { () -> () in})
+            weakSelf?.delay(2.0, closure: { () -> () in
+                print("nowRefresh success")
+                
+                weakSelf?.tableView.reloadData()
+                weakSelf?.tableView.doneRefresh()
+            })
+        })
+        
+        // 上啦加载更多
+        tableView.toLoadMoreAction({ () -> Void in
+            print("toLoadMoreAction success")
+            weakSelf?.tableView.reloadData()
+            weakSelf?.tableView.doneRefresh()
+            weakSelf?.tableView.endLoadMoreData()
+      
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -91,5 +110,14 @@ class BaseTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
+    }
 
 }
