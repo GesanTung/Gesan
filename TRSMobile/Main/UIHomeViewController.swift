@@ -22,6 +22,7 @@ class UIHomeViewController: BaseViewController {
     
     override func initContentView() {
         gViewContent.gTableUrl = KURLAppColumn
+        gViewContent.gTableCellName = "NewsCellView"
         gViewContent.view.frame = CGRectMake(0,KNavBar,KScreenWidth,KScreenHeight-KNavBar)
         self.view .addSubview(gViewContent.view)
         addChildViewController(gViewContent)

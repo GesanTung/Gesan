@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A6632A5F1C448ECA0047A637 /* BaseTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6632A5E1C448ECA0047A637 /* BaseTableViewDelegate.swift */; };
+		A6632A691C44D6450047A637 /* NewsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6632A671C44D6450047A637 /* NewsCellView.swift */; };
+		A6632A6A1C44D6450047A637 /* NewsCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6632A681C44D6450047A637 /* NewsCellView.xib */; };
 		A6859ED51C3F535C00ECB5E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859ED41C3F535C00ECB5E0 /* AppDelegate.swift */; };
 		A6859ED71C3F535C00ECB5E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859ED61C3F535C00ECB5E0 /* ViewController.swift */; };
 		A6859EDC1C3F535C00ECB5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6859EDB1C3F535C00ECB5E0 /* Assets.xcassets */; };
@@ -135,6 +137,8 @@
 
 /* Begin PBXFileReference section */
 		A6632A5E1C448ECA0047A637 /* BaseTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewDelegate.swift; sourceTree = "<group>"; };
+		A6632A671C44D6450047A637 /* NewsCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCellView.swift; sourceTree = "<group>"; };
+		A6632A681C44D6450047A637 /* NewsCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCellView.xib; sourceTree = "<group>"; };
 		A6859ED11C3F535C00ECB5E0 /* TRSMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRSMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6859ED41C3F535C00ECB5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6859ED61C3F535C00ECB5E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -285,6 +289,8 @@
 				A6859F2D1C3F92ED00ECB5E0 /* UIDetailViewController.swift */,
 				A6859F2E1C3F92ED00ECB5E0 /* UIDetailViewController.xib */,
 				A6859F311C3F931700ECB5E0 /* UIImageViewController.swift */,
+				A6632A671C44D6450047A637 /* NewsCellView.swift */,
+				A6632A681C44D6450047A637 /* NewsCellView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -546,6 +552,7 @@
 				A6859F871C3FBFAE00ECB5E0 /* CodeScan.bundle in Resources */,
 				A6859EDF1C3F535C00ECB5E0 /* LaunchScreen.storyboard in Resources */,
 				A6859F9B1C3FBFFD00ECB5E0 /* Info.plist in Resources */,
+				A6632A6A1C44D6450047A637 /* NewsCellView.xib in Resources */,
 				A6859F721C3FBBCF00ECB5E0 /* ZLSwiftRefresh.bundle in Resources */,
 				A6859EDC1C3F535C00ECB5E0 /* Assets.xcassets in Resources */,
 				A6859F301C3F92ED00ECB5E0 /* UIDetailViewController.xib in Resources */,
@@ -563,6 +570,7 @@
 				A6859F6F1C3FBBCF00ECB5E0 /* ZLSwiftConstDefine.swift in Sources */,
 				A6859FC21C3FC29F00ECB5E0 /* SnapKit.swift in Sources */,
 				A6859F251C3F8E7300ECB5E0 /* TRSConfig.swift in Sources */,
+				A6632A691C44D6450047A637 /* NewsCellView.swift in Sources */,
 				A6859F231C3F89F100ECB5E0 /* TRSApi.swift in Sources */,
 				A6859F1F1C3F86E400ECB5E0 /* MainTabBarController.swift in Sources */,
 				A6859FF41C3FC2EA00ECB5E0 /* ImageDownloader.swift in Sources */,

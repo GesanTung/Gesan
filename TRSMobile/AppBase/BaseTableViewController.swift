@@ -11,9 +11,9 @@ import Alamofire
 
 class BaseTableViewController: UITableViewController {
     
-    internal var gTableUrl:String?
+    internal var gTableUrl:String = ""
     
-    internal var gTableCellName:String?
+    internal var gTableCellName:String = ""
     
     internal var delegate : BaseTableViewDelegate?
     
@@ -33,6 +33,11 @@ class BaseTableViewController: UITableViewController {
         gCurrentPage = 0
         
         gTotalPage = 0
+        
+        if !gTableCellName.isEmpty {
+            let nib: UINib = UINib(nibName: gTableCellName, bundle: NSBundle.mainBundle())
+            self.tableView!.registerNib(nib, forCellReuseIdentifier: gTableCellName)
+        }
         
          weak var weakSelf = self as BaseTableViewController
         // 及时上拉刷新
@@ -100,8 +105,8 @@ class BaseTableViewController: UITableViewController {
         let obj:AnyObject? = self.gDataSource[indexPath.row]
         var height = (self.delegate != nil) ? (self.delegate?.tableViewHeightForRowAtIndexPath?(tableView, indexPath: indexPath,dict:obj))!:0
         if height>0 {return height}
-        if gTableCellName != nil {
-            let className = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as! String + "." + gTableCellName!
+        if !gTableCellName.isEmpty {
+            let className = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as! String + "." + gTableCellName
 
             let basecell:AnyClass = NSClassFromString(className)!
             height =  (basecell as! BaseTableViewCell.Type).height(obj!)
@@ -111,7 +116,7 @@ class BaseTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let obj:AnyObject? = self.gDataSource[indexPath.row]
-        let cell:BaseTableViewCell! = tableView.dequeueReusableCellWithIdentifier("BaseTableViewCell", forIndexPath: indexPath)as!BaseTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(gTableCellName, forIndexPath: indexPath)as!BaseTableViewCell
         cell.gDict = obj
         return cell
     }
