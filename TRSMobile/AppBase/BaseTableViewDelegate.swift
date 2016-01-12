@@ -21,5 +21,5 @@ import UIKit
     
     optional func tableViewCellForRowAtIndexPath(tableView: UITableView!,indexPath: NSIndexPath!,dict:AnyObject!) -> UITableViewCell!
     
-    optional func tableViewDidDeselectRowAtIndexPath(tableView: UITableView!,indexPath: NSIndexPath!,dict:AnyObject!)
+    optional func tableViewDidSelectRowAtIndexPath(tableView: UITableView!,indexPath: NSIndexPath!,dict:AnyObject!)
 }

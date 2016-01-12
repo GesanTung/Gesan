@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class BaseTableViewController: UITableViewController {
+@objc class BaseTableViewController: UITableViewController {
     
     internal var gTableUrl:String = ""
     
@@ -33,6 +33,8 @@ class BaseTableViewController: UITableViewController {
         gCurrentPage = 0
         
         gTotalPage = 0
+        
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
         if !gTableCellName.isEmpty {
             let nib: UINib = UINib(nibName: gTableCellName, bundle: NSBundle.mainBundle())
@@ -87,42 +89,53 @@ class BaseTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        let number = (self.delegate != nil) ?(self.delegate?.tableViewNumberOfSections!(tableView))!:1
-        return  number
+        if  let number = delegate?.tableViewNumberOfSections?(tableView) {
+            return number
+        }
+        return  1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if self.gDataSource.isEmpty{
+        if self.gDataSource.isEmpty {
             return 0
-        }else{
-            let number = (self.delegate != nil) ? (self.delegate?.tableViewNumberOfRowsInSection?(tableView,section: section))! :self.gDataSource.count
+        }else if let number = delegate?.tableViewNumberOfRowsInSection?(tableView,section: section) {
             return  number
+        }else{
+           return self.gDataSource.count
         }
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if self.gDataSource.isEmpty {return 0}
+        
+        if self.gDataSource.isEmpty{
+            return 0
+        }
         let obj:AnyObject? = self.gDataSource[indexPath.row]
-        var height = (self.delegate != nil) ? (self.delegate?.tableViewHeightForRowAtIndexPath?(tableView, indexPath: indexPath,dict:obj))!:0
-        if height>0 {return height}
+        if let height = delegate?.tableViewHeightForRowAtIndexPath?(tableView, indexPath: indexPath,dict:obj) {
+            return height
+        }
         if !gTableCellName.isEmpty {
             let className = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as! String + "." + gTableCellName
-
+       
             let basecell:AnyClass = NSClassFromString(className)!
-            height =  (basecell as! BaseTableViewCell.Type).height(obj!)
+            return  (basecell as! BaseTableViewCell.Type).height(obj!)
         }
-        return height
+        return 0
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let obj:AnyObject? = self.gDataSource[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier(gTableCellName, forIndexPath: indexPath)as!BaseTableViewCell
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
         cell.gDict = obj
         return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        if(self.delegate?.tableViewDidSelectRowAtIndexPath != nil){
+           let cell = tableView.cellForRowAtIndexPath(indexPath)as!BaseTableViewCell
+           self.delegate?.tableViewDidSelectRowAtIndexPath!(tableView, indexPath: indexPath,dict:cell.gDict)
+        }
     }
 
 

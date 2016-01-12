@@ -8,7 +8,7 @@
 import Alamofire
 import UIKit
 
-class UIHomeViewController: BaseViewController {
+class UIHomeViewController: BaseViewController,BaseTableViewDelegate {
     
     var gDataChannel : NSMutableArray?
     
@@ -21,9 +21,21 @@ class UIHomeViewController: BaseViewController {
     }
     
     override func initContentView() {
+        // 1
+        let nav = self.navigationController?.navigationBar
+        // 2
+        nav?.barTintColor  = UIColor(red: 20/255.0, green: 155/255, blue: 89/255, alpha: 1.0)
+
+        // 5
+        nav?.titleTextAttributes =  NSDictionary(object: UIColor.whiteColor(),
+            forKey:   NSForegroundColorAttributeName) as? [String : AnyObject]
+        
+        navigationItem.title = "首页"
+        
         gViewContent.gTableUrl = KURLAppColumn
+        gViewContent.delegate = self;
         gViewContent.gTableCellName = "NewsCellView"
-        gViewContent.view.frame = CGRectMake(0,KNavBar,KScreenWidth,KScreenHeight-KNavBar)
+        gViewContent.view.frame = CGRectMake(0,0,KScreenWidth,KScreenHeight)
         self.view .addSubview(gViewContent.view)
         addChildViewController(gViewContent)
     }
@@ -45,7 +57,9 @@ class UIHomeViewController: BaseViewController {
         }
     }
     
+    func tableViewDidSelectRowAtIndexPath(tableView: UITableView!,indexPath: NSIndexPath!,dict:AnyObject!){
     
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
