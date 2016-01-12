@@ -14,8 +14,8 @@ public let KScreenHeight   = UIScreen.mainScreen().bounds.size.height
 
 public let KScreenSize     = UIScreen.mainScreen().bounds
 
-public let KTabbarHeight   = 49
+public let KTabbarHeight   = CGFloat(49)
 
-public let KNavBar         = 64
+public let KNavBar         = CGFloat(64)
 
-public let KStatusBar      = 20
+public let KStatusBar      = CGFloat(20)

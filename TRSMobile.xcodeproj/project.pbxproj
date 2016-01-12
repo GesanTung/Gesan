@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6632A5F1C448ECA0047A637 /* BaseTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6632A5E1C448ECA0047A637 /* BaseTableViewDelegate.swift */; };
 		A6859ED51C3F535C00ECB5E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859ED41C3F535C00ECB5E0 /* AppDelegate.swift */; };
 		A6859ED71C3F535C00ECB5E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859ED61C3F535C00ECB5E0 /* ViewController.swift */; };
 		A6859EDC1C3F535C00ECB5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6859EDB1C3F535C00ECB5E0 /* Assets.xcassets */; };
@@ -133,6 +134,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6632A5E1C448ECA0047A637 /* BaseTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewDelegate.swift; sourceTree = "<group>"; };
 		A6859ED11C3F535C00ECB5E0 /* TRSMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRSMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6859ED41C3F535C00ECB5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6859ED61C3F535C00ECB5E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				A6859F3B1C3F957500ECB5E0 /* BaseTableViewCell.swift */,
 				A6859F3D1C3F95A100ECB5E0 /* BaseTableViewController.swift */,
 				A6859F3F1C3F997D00ECB5E0 /* BaseControllerProtocol.swift */,
+				A6632A5E1C448ECA0047A637 /* BaseTableViewDelegate.swift */,
 			);
 			path = AppBase;
 			sourceTree = "<group>";
@@ -621,6 +624,7 @@
 				A6859F3A1C3F953E00ECB5E0 /* BaseWebView.swift in Sources */,
 				A6859F9E1C3FBFFD00ECB5E0 /* ObservableProxy.swift in Sources */,
 				A6859F9F1C3FBFFD00ECB5E0 /* ObservableReference.swift in Sources */,
+				A6632A5F1C448ECA0047A637 /* BaseTableViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

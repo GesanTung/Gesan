@@ -7,17 +7,34 @@
 //
 
 import UIKit
+import Alamofire
 
 class BaseTableViewController: UITableViewController {
+    
+    internal var gTableUrl:String?
+    
+    internal var gTableCellName:String?
+    
+    internal var delegate : BaseTableViewDelegate?
+    
+    private  var gDataSource = [AnyObject]()
+    
+    private  var gIsRefresh:Bool?
+    
+    private  var gCurrentPage:UInt?
+    
+    private  var gTotalPage:UInt?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gIsRefresh = true
+        
+        gCurrentPage = 0
+        
+        gTotalPage = 0
+        
          weak var weakSelf = self as BaseTableViewController
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         // 及时上拉刷新
         tableView.nowRefresh({ () -> Void in
             weakSelf?.delay(2.0, closure: { () -> () in})
@@ -37,7 +54,25 @@ class BaseTableViewController: UITableViewController {
             weakSelf?.tableView.endLoadMoreData()
       
         })
+        
+        httpDataRequest()
     }
+    
+    func httpDataRequest(){
+        Alamofire.request(.GET, KURLAppColumn)
+            .responseJSON { response in
+                print(response.request)  // original URL request
+                print(response.response) // URL response
+                print(response.data)     // server data
+                print(response.result)   // result of response serialization
+                
+                if let JSON = response.result.value {
+                    self.gDataSource += (JSON.objectForKey("datas") as! [AnyObject])
+                    print("JSON: \(JSON)")
+                }
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -47,24 +82,33 @@ class BaseTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        let number = (self.delegate?.tableViewNumberOfSections?(tableView))!
+        return (number>0) ? number : 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        let number = (self.delegate?.tableViewNumberOfRowsInSection?(tableView,section: section))!
+        return (number>0) ? number : 1
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        let height = (self.delegate?.tableViewHeightForRowAtIndexPath?(tableView, indexPath: indexPath,dict: ""))!
+        return height
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
-        // Configure the cell...
+         //Configure the cell...
 
         return cell
     }
-    */
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+
 
     /*
     // Override to support conditional editing of the table view.

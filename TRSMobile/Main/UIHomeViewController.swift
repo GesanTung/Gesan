@@ -6,10 +6,13 @@
 //  Copyright © 2016年 trs. All rights reserved.
 //
 import Alamofire
+import UIKit
 
 class UIHomeViewController: BaseViewController {
     
     var gDataChannel : NSMutableArray?
+    
+    var gViewContent = BaseTableViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +21,10 @@ class UIHomeViewController: BaseViewController {
     }
     
     override func initContentView() {
-        
+        gViewContent.gTableUrl = KURLAppColumn
+        gViewContent.view.frame = CGRectMake(0,KNavBar,KScreenWidth,KScreenHeight-KNavBar)
+        self.view .addSubview(gViewContent.view)
+        addChildViewController(gViewContent)
     }
     
     override func initContentData() {
