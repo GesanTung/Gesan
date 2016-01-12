@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,23 +15,37 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="71.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AFq-ZX-aV6">
-                        <rect key="frame" x="-6" y="0.0" width="111" height="71.5"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AFq-ZX-aV6">
+                        <rect key="frame" x="-6" y="0.0" width="102.5" height="71.5"/>
                         <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="AFq-ZX-aV6" secondAttribute="height" multiplier="102:71" id="azx-h5-99M"/>
+                        </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nihao " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyX-9O-eJj">
-                        <rect key="frame" x="113" y="8" width="199" height="27"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nihao " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyX-9O-eJj">
+                        <rect key="frame" x="104.5" y="0.0" width="207.5" height="44"/>
                         <animations/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.01905935403" green="0.53333333329999999" blue="0.98904152680000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <animations/>
-                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="AFq-ZX-aV6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-6" id="FdW-75-mqn"/>
+                    <constraint firstItem="yyX-9O-eJj" firstAttribute="leading" secondItem="AFq-ZX-aV6" secondAttribute="trailing" constant="8" id="Fdx-3U-16T"/>
+                    <constraint firstItem="AFq-ZX-aV6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Wc4-e3-KhD"/>
+                    <constraint firstAttribute="bottom" secondItem="AFq-ZX-aV6" secondAttribute="bottom" id="WeL-CC-c1f"/>
+                    <constraint firstAttribute="trailing" secondItem="yyX-9O-eJj" secondAttribute="trailing" constant="8" id="YsA-pE-o9B"/>
+                    <constraint firstItem="yyX-9O-eJj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aem-Of-IQp"/>
+                    <constraint firstAttribute="bottom" secondItem="yyX-9O-eJj" secondAttribute="bottom" constant="27.5" id="riL-aL-TJ6"/>
+                    <constraint firstItem="yyX-9O-eJj" firstAttribute="leading" secondItem="AFq-ZX-aV6" secondAttribute="trailing" constant="8" id="zHl-22-NTQ"/>
+                </constraints>
             </tableViewCellContentView>
             <animations/>
             <connections>
+                <outlet property="gViewImage" destination="AFq-ZX-aV6" id="eAy-74-sTv"/>
                 <outlet property="gViewTitle" destination="yyX-9O-eJj" id="bzi-n3-aAc"/>
             </connections>
             <point key="canvasLocation" x="488" y="303"/>

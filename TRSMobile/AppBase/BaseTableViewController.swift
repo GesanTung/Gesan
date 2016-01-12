@@ -51,14 +51,14 @@ class BaseTableViewController: UITableViewController {
             })
         })
         
-        // 上啦加载更多
-        tableView.toLoadMoreAction({ () -> Void in
-            print("toLoadMoreAction success")
-            weakSelf?.tableView.reloadData()
-            weakSelf?.tableView.doneRefresh()
-            weakSelf?.tableView.endLoadMoreData()
-      
-        })
+//        // 上啦加载更多
+//        tableView.toLoadMoreAction({ () -> Void in
+//            print("toLoadMoreAction success")
+//            weakSelf?.tableView.reloadData()
+//            weakSelf?.tableView.doneRefresh()
+//            weakSelf?.tableView.endLoadMoreData()
+//      
+//        })
         
         httpDataRequest()
     }
