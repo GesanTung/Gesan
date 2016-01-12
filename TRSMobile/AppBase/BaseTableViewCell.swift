@@ -34,7 +34,7 @@ class BaseTableViewCell: UITableViewCell {
     
     
     
-    static func height(dict:AnyObject) -> float_t{
+    class func height(dict:AnyObject) -> CGFloat{
         return 0;
     }
 

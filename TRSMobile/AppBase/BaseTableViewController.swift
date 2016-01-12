@@ -82,26 +82,37 @@ class BaseTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        let number = (self.delegate?.tableViewNumberOfSections?(tableView))!
-        return (number>0) ? number : 1
+        let number = (self.delegate != nil) ?(self.delegate?.tableViewNumberOfSections!(tableView))!:1
+        return  number
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let number = (self.delegate?.tableViewNumberOfRowsInSection?(tableView,section: section))!
-        return (number>0) ? number : 1
+        if self.gDataSource.isEmpty{
+            return 0
+        }else{
+            let number = (self.delegate != nil) ? (self.delegate?.tableViewNumberOfRowsInSection?(tableView,section: section))! :self.gDataSource.count
+            return  number
+        }
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        
-        let height = (self.delegate?.tableViewHeightForRowAtIndexPath?(tableView, indexPath: indexPath,dict: ""))!
+        if self.gDataSource.isEmpty {return 0}
+        let obj:AnyObject? = self.gDataSource[indexPath.row]
+        var height = (self.delegate != nil) ? (self.delegate?.tableViewHeightForRowAtIndexPath?(tableView, indexPath: indexPath,dict:obj))!:0
+        if height>0 {return height}
+        if gTableCellName != nil {
+            let className = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as! String + "." + gTableCellName!
+
+            let basecell:AnyClass = NSClassFromString(className)!
+            height =  (basecell as! BaseTableViewCell.Type).height(obj!)
+        }
         return height
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-         //Configure the cell...
-
+        let obj:AnyObject? = self.gDataSource[indexPath.row]
+        let cell:BaseTableViewCell! = tableView.dequeueReusableCellWithIdentifier("BaseTableViewCell", forIndexPath: indexPath)as!BaseTableViewCell
+        cell.gDict = obj
         return cell
     }
     
