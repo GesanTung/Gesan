@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A65A33E21C46213A003980F4 /* Extend+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65A33E11C46213A003980F4 /* Extend+UIButton.swift */; };
+		A65A33E41C46219E003980F4 /* Extend+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65A33E31C46219E003980F4 /* Extend+UIView.swift */; };
+		A65A33E61C462608003980F4 /* TrsPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65A33E51C462608003980F4 /* TrsPrint.swift */; };
 		A6632A5F1C448ECA0047A637 /* BaseTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6632A5E1C448ECA0047A637 /* BaseTableViewDelegate.swift */; };
 		A6632A691C44D6450047A637 /* NewsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6632A671C44D6450047A637 /* NewsCellView.swift */; };
 		A6632A6A1C44D6450047A637 /* NewsCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6632A681C44D6450047A637 /* NewsCellView.xib */; };
@@ -138,6 +141,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A65A33E11C46213A003980F4 /* Extend+UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extend+UIButton.swift"; sourceTree = "<group>"; };
+		A65A33E31C46219E003980F4 /* Extend+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extend+UIView.swift"; sourceTree = "<group>"; };
+		A65A33E51C462608003980F4 /* TrsPrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrsPrint.swift; sourceTree = "<group>"; };
 		A6632A5E1C448ECA0047A637 /* BaseTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewDelegate.swift; sourceTree = "<group>"; };
 		A6632A671C44D6450047A637 /* NewsCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCellView.swift; sourceTree = "<group>"; };
 		A6632A681C44D6450047A637 /* NewsCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCellView.xib; sourceTree = "<group>"; };
@@ -233,6 +239,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A65A33D91C4620EB003980F4 /* ExtendCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				A65A33E11C46213A003980F4 /* Extend+UIButton.swift */,
+				A65A33E31C46219E003980F4 /* Extend+UIView.swift */,
+			);
+			path = ExtendCocoa;
+			sourceTree = "<group>";
+		};
 		A6632A6B1C4508CA0047A637 /* TTTabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +297,7 @@
 				A6859F201C3F878900ECB5E0 /* TRSDefine.swift */,
 				A6859F2C1C3F909100ECB5E0 /* TRS-Bridging-Header.h */,
 				A6859F241C3F8E7300ECB5E0 /* TRSConfig.swift */,
+				A65A33E51C462608003980F4 /* TrsPrint.swift */,
 				A6859F331C3F94B400ECB5E0 /* BaseNetServer.swift */,
 				A6859F351C3F94DD00ECB5E0 /* BaseView.swift */,
 				A6859F371C3F951800ECB5E0 /* BaseButton.swift */,
@@ -318,6 +334,7 @@
 		A6859EE91C3F574F00ECB5E0 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				A65A33D91C4620EB003980F4 /* ExtendCocoa */,
 				A6632A6B1C4508CA0047A637 /* TTTabBar */,
 				A6859FE51C3FC2EA00ECB5E0 /* Kingfisher */,
 				A6859FAB1C3FC29F00ECB5E0 /* SnapKit */,
@@ -604,6 +621,7 @@
 				A6859F7E1C3FBF4800ECB5E0 /* LBXPermissions.swift in Sources */,
 				A6859F381C3F951800ECB5E0 /* BaseButton.swift in Sources */,
 				A6859FFE1C3FC2EA00ECB5E0 /* UIImageView+Kingfisher.swift in Sources */,
+				A65A33E41C46219E003980F4 /* Extend+UIView.swift in Sources */,
 				A6859FBC1C3FC29F00ECB5E0 /* ConstraintItem.swift in Sources */,
 				A6859FF51C3FC2EA00ECB5E0 /* ImageTransition.swift in Sources */,
 				A6859F9C1C3FBFFD00ECB5E0 /* Observable.swift in Sources */,
@@ -618,9 +636,11 @@
 				A6859F9A1C3FBFFD00ECB5E0 /* EventSubscription.swift in Sources */,
 				A6859F831C3FBF4800ECB5E0 /* LBXScanViewStyle.swift in Sources */,
 				A6859FF71C3FC2EA00ECB5E0 /* KingfisherOptions.swift in Sources */,
+				A65A33E61C462608003980F4 /* TrsPrint.swift in Sources */,
 				A6859FF91C3FC2EA00ECB5E0 /* Resource.swift in Sources */,
 				A6859F341C3F94B400ECB5E0 /* BaseNetServer.swift in Sources */,
 				A6859F2B1C3F900F00ECB5E0 /* UIHomeViewController.swift in Sources */,
+				A65A33E21C46213A003980F4 /* Extend+UIButton.swift in Sources */,
 				A6859FFB1C3FC2EA00ECB5E0 /* ThreadHelper.swift in Sources */,
 				A6859FB91C3FC29F00ECB5E0 /* Constraint.swift in Sources */,
 				A6859F211C3F878900ECB5E0 /* TRSDefine.swift in Sources */,

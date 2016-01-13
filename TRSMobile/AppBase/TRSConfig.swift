@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+var TRS_DEBUG_MODE = true
+
+
+

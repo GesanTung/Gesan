@@ -44,6 +44,9 @@
                 </constraints>
             </tableViewCellContentView>
             <animations/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="TRS.PUSH" value="MAIN"/>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="gViewImage" destination="AFq-ZX-aV6" id="eAy-74-sTv"/>
                 <outlet property="gViewTitle" destination="yyX-9O-eJj" id="bzi-n3-aAc"/>
