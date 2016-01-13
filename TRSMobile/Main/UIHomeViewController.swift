@@ -52,7 +52,7 @@ class UIHomeViewController: BaseViewController,BaseTableViewDelegate {
                 
                 if let JSON = response.result.value {
                    self.gDataChannel!.addObjectsFromArray(JSON.objectForKey("datas") as! [AnyObject])
-                    print("JSON: \(JSON)")
+                    TrsPrint("JSON: \(JSON)")
                 }
         }
     }

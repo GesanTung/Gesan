@@ -8,7 +8,7 @@
 
 import Foundation
 
-var TRS_DEBUG_MODE = true
+var TRS_DEBUG_MODE = false
 
 
 

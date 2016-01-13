@@ -292,7 +292,6 @@
 		A6859EE61C3F574F00ECB5E0 /* AppBase */ = {
 			isa = PBXGroup;
 			children = (
-				A6859F281C3F8F5200ECB5E0 /* BaseViewController.swift */,
 				A6859F221C3F89F100ECB5E0 /* TRSApi.swift */,
 				A6859F201C3F878900ECB5E0 /* TRSDefine.swift */,
 				A6859F2C1C3F909100ECB5E0 /* TRS-Bridging-Header.h */,
@@ -303,6 +302,7 @@
 				A6859F371C3F951800ECB5E0 /* BaseButton.swift */,
 				A6859F391C3F953E00ECB5E0 /* BaseWebView.swift */,
 				A6859F3B1C3F957500ECB5E0 /* BaseTableViewCell.swift */,
+				A6859F281C3F8F5200ECB5E0 /* BaseViewController.swift */,
 				A6859F3D1C3F95A100ECB5E0 /* BaseTableViewController.swift */,
 				A6859F3F1C3F997D00ECB5E0 /* BaseControllerProtocol.swift */,
 				A6632A5E1C448ECA0047A637 /* BaseTableViewDelegate.swift */,

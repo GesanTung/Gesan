@@ -46,7 +46,7 @@ class BaseTableViewController: UITableViewController {
         tableView.nowRefresh({ () -> Void in
             weakSelf?.delay(2.0, closure: { () -> () in})
             weakSelf?.delay(2.0, closure: { () -> () in
-                print("nowRefresh success")
+                TrsPrint("nowRefresh success")
                 
                 weakSelf?.tableView.reloadData()
                 weakSelf?.tableView.doneRefresh()
@@ -75,7 +75,7 @@ class BaseTableViewController: UITableViewController {
                 
                 if let JSON = response.result.value {
                     self.gDataSource += (JSON.objectForKey("datas") as! [AnyObject])
-                    print("JSON: \(JSON)")
+                    TrsPrint("JSON: \(JSON)")
                 }
         }
     }
