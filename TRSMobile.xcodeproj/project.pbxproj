@@ -10,6 +10,8 @@
 		A6632A5F1C448ECA0047A637 /* BaseTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6632A5E1C448ECA0047A637 /* BaseTableViewDelegate.swift */; };
 		A6632A691C44D6450047A637 /* NewsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6632A671C44D6450047A637 /* NewsCellView.swift */; };
 		A6632A6A1C44D6450047A637 /* NewsCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6632A681C44D6450047A637 /* NewsCellView.xib */; };
+		A6632A6E1C4508CA0047A637 /* TTTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6632A6C1C4508CA0047A637 /* TTTabBar.swift */; };
+		A6632A6F1C4508CA0047A637 /* TTTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6632A6D1C4508CA0047A637 /* TTTabBarItem.swift */; };
 		A6859ED51C3F535C00ECB5E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859ED41C3F535C00ECB5E0 /* AppDelegate.swift */; };
 		A6859ED71C3F535C00ECB5E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6859ED61C3F535C00ECB5E0 /* ViewController.swift */; };
 		A6859EDC1C3F535C00ECB5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6859EDB1C3F535C00ECB5E0 /* Assets.xcassets */; };
@@ -139,6 +141,8 @@
 		A6632A5E1C448ECA0047A637 /* BaseTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewDelegate.swift; sourceTree = "<group>"; };
 		A6632A671C44D6450047A637 /* NewsCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCellView.swift; sourceTree = "<group>"; };
 		A6632A681C44D6450047A637 /* NewsCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCellView.xib; sourceTree = "<group>"; };
+		A6632A6C1C4508CA0047A637 /* TTTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTabBar.swift; sourceTree = "<group>"; };
+		A6632A6D1C4508CA0047A637 /* TTTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTabBarItem.swift; sourceTree = "<group>"; };
 		A6859ED11C3F535C00ECB5E0 /* TRSMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRSMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6859ED41C3F535C00ECB5E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6859ED61C3F535C00ECB5E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +233,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6632A6B1C4508CA0047A637 /* TTTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A6632A6C1C4508CA0047A637 /* TTTabBar.swift */,
+				A6632A6D1C4508CA0047A637 /* TTTabBarItem.swift */,
+			);
+			path = TTTabBar;
+			sourceTree = "<group>";
+		};
 		A6859EC81C3F535C00ECB5E0 = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +318,7 @@
 		A6859EE91C3F574F00ECB5E0 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				A6632A6B1C4508CA0047A637 /* TTTabBar */,
 				A6859FE51C3FC2EA00ECB5E0 /* Kingfisher */,
 				A6859FAB1C3FC29F00ECB5E0 /* SnapKit */,
 				A6859F8B1C3FBFFD00ECB5E0 /* Observable */,
@@ -611,6 +625,7 @@
 				A6859FB91C3FC29F00ECB5E0 /* Constraint.swift in Sources */,
 				A6859F211C3F878900ECB5E0 /* TRSDefine.swift in Sources */,
 				A6859FA01C3FBFFD00ECB5E0 /* OwningEventReference.swift in Sources */,
+				A6632A6F1C4508CA0047A637 /* TTTabBarItem.swift in Sources */,
 				A6859F851C3FBF4800ECB5E0 /* QQScanViewController.swift in Sources */,
 				A6859ED51C3F535C00ECB5E0 /* AppDelegate.swift in Sources */,
 				A6859FC51C3FC29F00ECB5E0 /* ViewController+SnapKit.swift in Sources */,
@@ -619,6 +634,7 @@
 				A6859F711C3FBBCF00ECB5E0 /* ZLSwiftHeadView.swift in Sources */,
 				A6859F821C3FBF4800ECB5E0 /* LBXScanViewController.swift in Sources */,
 				A6859F731C3FBBCF00ECB5E0 /* ZLSwiftRefreshExtension.swift in Sources */,
+				A6632A6E1C4508CA0047A637 /* TTTabBar.swift in Sources */,
 				A6859FA21C3FBFFD00ECB5E0 /* TupleObservable.swift in Sources */,
 				A6859FC01C3FC29F00ECB5E0 /* EdgeInsets.swift in Sources */,
 				A6859F841C3FBF4800ECB5E0 /* LBXScanWrapper.swift in Sources */,

@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-@objc class BaseTableViewController: UITableViewController {
+class BaseTableViewController: UITableViewController {
     
     internal var gTableUrl:String = ""
     
