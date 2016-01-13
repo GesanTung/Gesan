@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18277DED1C46912E00D6E669 /* TRSApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18277DEC1C46912E00D6E669 /* TRSApplication.swift */; };
 		A65A33E21C46213A003980F4 /* Extend+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65A33E11C46213A003980F4 /* Extend+UIButton.swift */; };
 		A65A33E41C46219E003980F4 /* Extend+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65A33E31C46219E003980F4 /* Extend+UIView.swift */; };
 		A65A33E61C462608003980F4 /* TrsPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65A33E51C462608003980F4 /* TrsPrint.swift */; };
@@ -141,6 +142,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18277DEC1C46912E00D6E669 /* TRSApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRSApplication.swift; sourceTree = "<group>"; };
 		A65A33E11C46213A003980F4 /* Extend+UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extend+UIButton.swift"; sourceTree = "<group>"; };
 		A65A33E31C46219E003980F4 /* Extend+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extend+UIView.swift"; sourceTree = "<group>"; };
 		A65A33E51C462608003980F4 /* TrsPrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrsPrint.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 			children = (
 				A6859F281C3F8F5200ECB5E0 /* BaseViewController.swift */,
 				A6859F221C3F89F100ECB5E0 /* TRSApi.swift */,
+				18277DEC1C46912E00D6E669 /* TRSApplication.swift */,
 				A6859F201C3F878900ECB5E0 /* TRSDefine.swift */,
 				A6859F2C1C3F909100ECB5E0 /* TRS-Bridging-Header.h */,
 				A6859F241C3F8E7300ECB5E0 /* TRSConfig.swift */,
@@ -606,6 +609,7 @@
 				A6859F1F1C3F86E400ECB5E0 /* MainTabBarController.swift in Sources */,
 				A6859FF41C3FC2EA00ECB5E0 /* ImageDownloader.swift in Sources */,
 				A6859F361C3F94DD00ECB5E0 /* BaseView.swift in Sources */,
+				18277DED1C46912E00D6E669 /* TRSApplication.swift in Sources */,
 				A6859F401C3F997D00ECB5E0 /* BaseControllerProtocol.swift in Sources */,
 				A6859F811C3FBF4800ECB5E0 /* LBXScanView.swift in Sources */,
 				A6859F3E1C3F95A100ECB5E0 /* BaseTableViewController.swift in Sources */,

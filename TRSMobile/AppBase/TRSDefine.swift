@@ -20,6 +20,16 @@ public let KNavBar         = CGFloat(64)
 
 public let KStatusBar      = CGFloat(20)
 
+public let KIsSimulator    = isSimulator
+
+let appName = Application.name             // CFBundleDisplayName : String
+
+let appVersion = Application.version       // CFBundleShortVersionString : String
+
+let appExecutable = Application.executable // CFBundleExecutable : String
+
+let appBundle = Application.bundle         // CFBundleIdentifier : String
+
 public let IS_SCREEN_4_INCH = CGSizeEqualToSize(CGSizeMake(640, 1136), UIScreen.mainScreen().currentMode!.size)
 public let IS_SCREEN_35_INCH = CGSizeEqualToSize(CGSizeMake(640, 960), UIScreen.mainScreen().currentMode!.size)
 public let IS_SCREEN_47_INCH = CGSizeEqualToSize(CGSizeMake(750, 1334), UIScreen.mainScreen().currentMode!.size)
