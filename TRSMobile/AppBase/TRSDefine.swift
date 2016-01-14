@@ -25,4 +25,7 @@ public let IS_SCREEN_35_INCH = CGSizeEqualToSize(CGSizeMake(640, 960), UIScreen.
 public let IS_SCREEN_47_INCH = CGSizeEqualToSize(CGSizeMake(750, 1334), UIScreen.mainScreen().currentMode!.size)
 public let IS_SCREEN_55_INCH = CGSizeEqualToSize(CGSizeMake(1242, 2208), UIScreen.mainScreen().currentMode!.size)
 
+public let kTabBarTextSelectedColor: UIColor = UIColor.init(red: 0, green: 0.478431, blue: 1, alpha: 1)
+public let kTabBarTextDeSelectedColor: UIColor = UIColor.blackColor()
+
 

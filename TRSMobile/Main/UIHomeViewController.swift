@@ -21,16 +21,20 @@ class UIHomeViewController: BaseViewController,BaseTableViewDelegate {
     }
     
     override func initContentView() {
-        // 1
-        let nav = self.navigationController?.navigationBar
-        // 2
-        nav?.barTintColor  = UIColor(red: 20/255.0, green: 155/255, blue: 89/255, alpha: 1.0)
-
-        // 5
-        nav?.titleTextAttributes =  NSDictionary(object: UIColor.whiteColor(),
-            forKey:   NSForegroundColorAttributeName) as? [String : AnyObject]
+//        // 1
+//        let nav = self.navigationController?.navigationBar
+//        // 2
+//        nav?.barTintColor  = UIColor(red: 20/255.0, green: 155/255, blue: 89/255, alpha: 1.0)
+//
+//        // 5
+//        nav?.titleTextAttributes =  NSDictionary(object: UIColor.whiteColor(),
+//            forKey:   NSForegroundColorAttributeName) as? [String : AnyObject]
+//        
+//        navigationItem.title = "首页"
         
-        navigationItem.title = "首页"
+        setNavBarButton(NAV.LEFT, string:"左侧")
+        setNavBarButton(NAV.RIGHT, string:"右侧")
+        setNavTitle("首页")
         
         gViewContent.gTableUrl = KURLAppColumn
         gViewContent.delegate = self;
@@ -52,7 +56,7 @@ class UIHomeViewController: BaseViewController,BaseTableViewDelegate {
                 
                 if let JSON = response.result.value {
                    self.gDataChannel!.addObjectsFromArray(JSON.objectForKey("datas") as! [AnyObject])
-                    TrsPrint("JSON: \(JSON)")
+                    tprint("JSON: \(JSON)")
                 }
         }
     }

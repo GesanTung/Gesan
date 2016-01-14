@@ -8,7 +8,7 @@
 
 import Foundation
 
-public func TrsPrint<T>(object: T, _ file: String = __FILE__, _ function: String = __FUNCTION__, _ line: Int = __LINE__)
+public func tprint<T>(object: T, _ file: String = __FILE__, _ function: String = __FUNCTION__, _ line: Int = __LINE__)
 {
     if TRS_DEBUG_MODE {
         var filename:String! = NSURL(fileURLWithPath: file).lastPathComponent?.URLString
